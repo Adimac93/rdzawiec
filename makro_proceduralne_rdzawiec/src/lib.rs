@@ -5,7 +5,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
 
     let new_str = match ident_str.as_str() {
         "Źle" | "Niedobrze" => "Err",
-        "Dobrze" | "Okej" | "Oki" => "Ok",
+        "Dobrze" | "Okej" | "Oki" | "Elegancko" | "Prawilnie" | "WPorządku" | "Prawidłowo" => "Ok",
         "Ciąg" => "String",
         "MapaHaszy" | "Słownik" => "HashMap",
         "Domyślny" | "Domyślna" | "Domyślne" => "Default",
@@ -66,7 +66,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "użyj" => "use",
         "do" => "into",
         "prawda" => "true",
-        "enumeracja" => "enum",
+        "enumeracja" | "wyliczenie" | "wyliczanka" => "enum",
         "kolekcje" => "collections",
         "Grupa" => "Group",
         "Identyfikator" => "Ident",
