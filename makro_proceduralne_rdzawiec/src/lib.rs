@@ -83,6 +83,15 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "Interpunkcja" => "Punct",
         "Dosłowne" => "Literal",
         "makro_proceduralne" => "proc_macro",
+        "alokacje" => "alloc",
+        "jakiekolwiek" => "any",
+        "architektura" => "arch",
+        "tablica" => "array",
+        "klonowanie" => "clone",
+        "so" => "os",
+        "pam" => "mem",
+        "preludium" => "prelude",
+        "proces" => "process",
         _ => &ident_str,
     };
 
